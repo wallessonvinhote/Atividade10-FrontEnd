@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech Commerce Solutions | Computadores, Notebooks e Suporte Técnico</title>
+  <meta name="description" content="Tech Commerce Solutions: computadores, notebooks, periféricos, equipamentos gamer e suporte técnico com atendimento próximo.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- Aplica o tema salvo antes da renderização para evitar "flash" -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('tcs-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-bs-theme', saved || (prefersDark ? 'dark' : 'light'));
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Bootstrap 5 e Bootstrap Icons via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu-principal" data-bs-offset="90" tabindex="0">
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ========== 1. CABEÇALHO ========== -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+          <img src="img/logo.svg" width="40" height="40" alt="">
+          <span class="brand-text">Tech Commerce <span class="text-accent">Solutions</span></span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-last">
+          <button id="btn-tema" class="btn btn-icon" type="button" aria-label="Alternar modo escuro" title="Alternar modo escuro">
+            <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          </button>
+          <button class="btn btn-icon position-relative" type="button" id="btn-carrinho" aria-label="Carrinho de compras" title="Carrinho">
+            <i class="bi bi-cart3" aria-hidden="true"></i>
+            <span id="cart-count" class="badge rounded-pill cart-badge" aria-live="polite">0</span>
+          </button>
+          <button class="btn btn-accent d-none d-md-inline-flex" type="button" data-bs-toggle="modal" data-bs-target="#modal-contato">
+            <i class="bi bi-chat-dots me-2" aria-hidden="true"></i>Fale conosco
+          </button>
+          <!-- Botão do menu mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                  aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item d-md-none">
+              <button class="btn btn-accent w-100 mt-2" type="button" data-bs-toggle="modal" data-bs-target="#modal-contato">
+                <i class="bi bi-chat-dots me-2" aria-hidden="true"></i>Fale conosco
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ========== 2. BANNER PRINCIPAL (HERO) ========== -->
+    <section id="inicio" class="hero">
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5 gx-lg-5">
+          <div class="col-lg-7">
+            <span class="hero-tag"><i class="bi bi-lightning-charge-fill me-1" aria-hidden="true"></i>Tecnologia que move você</span>
+            <h1 class="hero-title">Tech Commerce <span class="text-accent">Solutions</span></h1>
+            <p class="hero-lead">Do notebook para o trabalho ao setup gamer dos seus sonhos: performance, preço justo e suporte técnico de verdade.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#produtos" class="btn btn-accent btn-lg">Conheça nossos produtos <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
+              <a href="#servicos" class="btn btn-outline-light btn-lg">Ver serviços</a>
+            </div>
+            <ul class="hero-stats list-unstyled d-flex flex-wrap gap-4 mt-5 mb-0">
+              <li><strong>+5 mil</strong><span>clientes atendidos</span></li>
+              <li><strong>12 meses</strong><span>de garantia</span></li>
+              <li><strong>24h</strong><span>suporte técnico</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block text-center">
+            <img src="img/hero.svg" class="img-fluid hero-art" alt="Ilustração de um notebook e um monitor com brilho ciano" width="520" height="420">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. SEÇÃO DE SERVIÇOS ========== -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <header class="section-head text-center">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Nossos serviços</h2>
+          <p class="text-body-secondary">Soluções completas para quem precisa de tecnologia, em casa ou na empresa.</p>
+        </header>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-pc-display" aria-hidden="true"></i></div>
+                <h3 class="h5">Venda de computadores</h3>
+                <p class="mb-0">Desktops e notebooks para trabalho, estudo e criação, com configuração sob medida.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-tools" aria-hidden="true"></i></div>
+                <h3 class="h5">Assistência técnica</h3>
+                <p class="mb-0">Manutenção, limpeza, formatação e troca de peças com diagnóstico rápido e transparente.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-controller" aria-hidden="true"></i></div>
+                <h3 class="h5">Equipamentos gamer</h3>
+                <p class="mb-0">PCs, mouses, teclados e acessórios para quem joga sério e quer vantagem no jogo.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-hdd-network" aria-hidden="true"></i></div>
+                <h3 class="h5">Infraestrutura de TI</h3>
+                <p class="mb-0">Redes, servidores e cabeamento para deixar a sua empresa conectada e segura.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. SEÇÃO DE PRODUTOS (CARROSSEL) ========== -->
+    <section id="produtos" class="section section-alt">
+      <div class="container">
+        <header class="section-head text-center">
+          <p class="eyebrow">Destaques</p>
+          <h2>Nossos produtos</h2>
+          <p class="text-body-secondary mb-0">Escolha o seu e finalize em poucos cliques.</p>
+        </header>
+
+        <div class="produtos-carousel" id="carrossel" aria-roledescription="carrossel" aria-label="Produtos em destaque">
+          <button class="carousel-btn prev" type="button" aria-label="Produto anterior"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="produtos-track"></div>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Próximo produto"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="carousel-dots" id="carrossel-dots" role="tablist" aria-label="Navegação do carrossel"></div>
+      </div>
+    </section>
+
+    <!-- ========== 5. SOBRE A EMPRESA ========== -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <header class="section-head text-center">
+          <p class="eyebrow">Quem somos</p>
+          <h2>Sobre a empresa</h2>
+          <p class="text-body-secondary">A Tech Commerce Solutions une comércio eletrônico e informática para entregar tecnologia de qualidade com atendimento humano.</p>
+        </header>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card about-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-bullseye" aria-hidden="true"></i></div>
+                <h3 class="h5">Missão</h3>
+                <p class="mb-0">Oferecer tecnologia de qualidade com atendimento próximo e suporte técnico confiável, ajudando pessoas e empresas a trabalhar, estudar e se divertir melhor.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card about-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-eye" aria-hidden="true"></i></div>
+                <h3 class="h5">Visão</h3>
+                <p class="mb-0">Ser referência regional em soluções de informática e comércio eletrônico, reconhecida pela inovação e pela confiança dos clientes.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card about-card h-100">
+              <div class="card-body">
+                <div class="icon-box"><i class="bi bi-gem" aria-hidden="true"></i></div>
+                <h3 class="h5">Valores</h3>
+                <ul class="list-unstyled mb-0 values-list">
+                  <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Transparência com o cliente</li>
+                  <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Inovação constante</li>
+                  <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Compromisso com a qualidade</li>
+                  <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Respeito e ética</li>
+                  <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Atendimento humano e ágil</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 6. RODAPÉ ========== -->
+  <footer id="contato" class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-5">
+        <div class="col-lg-4">
+          <a class="d-flex align-items-center gap-2 mb-3 footer-brand" href="#inicio">
+            <img src="img/logo.svg" width="40" height="40" alt="">
+            <span class="brand-text">Tech Commerce <span class="text-accent">Solutions</span></span>
+          </a>
+          <p class="mb-3">Computadores, notebooks, periféricos, equipamentos gamer e suporte técnico em um só lugar.</p>
+          <div class="social d-flex gap-2" aria-label="Redes sociais">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h2 class="h6 text-uppercase footer-title">Endereço</h2>
+          <address class="mb-0">
+            <i class="bi bi-geo-alt me-2 text-accent" aria-hidden="true"></i>Av. Djalma Batista, 1000 – Chapada<br>
+            <span class="ms-4">Manaus – AM, 69050-010</span>
+          </address>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <h2 class="h6 text-uppercase footer-title">Contato</h2>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><i class="bi bi-telephone me-2 text-accent" aria-hidden="true"></i><a href="tel:+559230000000">(92) 3000-0000</a></li>
+            <li class="mb-2"><i class="bi bi-envelope me-2 text-accent" aria-hidden="true"></i><a href="mailto:contato@techcommerce.example">contato@techcommerce.example</a></li>
+            <li><i class="bi bi-clock me-2 text-accent" aria-hidden="true"></i>Seg a Sáb, 8h às 18h</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom text-center py-3">
+        <small>&copy; <span id="ano">2026</span> Tech Commerce Solutions. Todos os direitos reservados. Empresa fictícia criada para fins acadêmicos.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de contato (botão do cabeçalho) -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="modal-contato-titulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form id="form-contato" novalidate>
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modal-contato-titulo">Fale com a gente</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <div id="form-sucesso" class="alert alert-success d-none" role="alert">
+              <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i>Mensagem enviada! Retornaremos em breve.
+            </div>
+            <div class="mb-3">
+              <label for="c-nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="c-nome" required minlength="3" autocomplete="name">
+              <div class="invalid-feedback">Informe seu nome (mínimo 3 letras).</div>
+            </div>
+            <div class="mb-3">
+              <label for="c-email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="c-email" required autocomplete="email">
+              <div class="invalid-feedback">Informe um e-mail válido.</div>
+            </div>
+            <div class="mb-0">
+              <label for="c-msg" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="c-msg" rows="4" required minlength="10"></textarea>
+              <div class="invalid-feedback">Escreva uma mensagem (mínimo 10 caracteres).</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-accent"><i class="bi bi-send me-2" aria-hidden="true"></i>Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de feedback (botão Comprar) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast-compra" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body"><i class="bi bi-cart-check me-2" aria-hidden="true"></i><span id="toast-texto">Produto adicionado ao carrinho!</span></div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Ilustração de mouse gamer">
+  <defs><linearGradient id="rgb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+  <ellipse cx="160" cy="218" rx="70" ry="8" fill="#22d3ee" opacity=".18"/>
+  <path d="M160 20c-42 0-62 34-62 82v38c0 44 24 72 62 72s62-28 62-72v-38c0-48-20-82-62-82z" fill="#14264d" stroke="#22d3ee" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M160 20v82M98 102h124" stroke="#22d3ee" stroke-opacity=".5" stroke-width="2" fill="none"/>
+  <rect x="150" y="48" width="20" height="36" rx="10" fill="url(#rgb)"/>
+  <path d="M104 150c0 44 22 66 56 66s56-22 56-66" fill="none" stroke="url(#rgb)" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Ilustração de PC gamer">
+  <defs><linearGradient id="rgb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+  <ellipse cx="160" cy="218" rx="90" ry="9" fill="#22d3ee" opacity=".18"/>
+  <rect x="95" y="20" width="130" height="190" rx="12" fill="#14264d" stroke="#22d3ee" stroke-opacity=".7" stroke-width="2"/>
+  <rect x="108" y="34" width="104" height="162" rx="6" fill="#0a1630"/>
+  <g fill="none" stroke="#22d3ee" stroke-width="3"><circle cx="160" cy="76" r="24"/><circle cx="160" cy="76" r="9" fill="#22d3ee" fill-opacity=".4"/>
+  <circle cx="160" cy="146" r="24"/><circle cx="160" cy="146" r="9" fill="#22d3ee" fill-opacity=".4"/></g>
+  <path d="M160 52v-0M160 100v0" />
+  <rect x="204" y="34" width="5" height="162" rx="2.5" fill="url(#rgb)"/>
+  <rect x="111" y="34" width="5" height="162" rx="2.5" fill="url(#rgb)"/>
+  <circle cx="160" cy="204" r="2" fill="#22d3ee"/>
+</svg>
