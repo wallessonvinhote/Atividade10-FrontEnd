@@ -58,7 +58,7 @@ Abra o `index.html` no navegador (é necessário internet para carregar o Bootst
 Os produtos são posts da categoria **Produtos** no site `cesar0969.wordpress.com`. O portal busca os dados em:
 
 ```
-https://public-api.wordpress.com/wp/v2/sites/cesar0969.wordpress.com/posts?categories=7040&per_page=4&_embed
+Em manutenção...
 ```
 
 - O título do post vira o nome do produto e o preço vem do resumo (excerpt).
